@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ElephanTalk/static/css/main.3e13e2bf.chunk.css",
+    "main.js": "/ElephanTalk/static/js/main.4d9948b4.chunk.js",
+    "main.js.map": "/ElephanTalk/static/js/main.4d9948b4.chunk.js.map",
+    "runtime-main.js": "/ElephanTalk/static/js/runtime-main.9dc9d18c.js",
+    "runtime-main.js.map": "/ElephanTalk/static/js/runtime-main.9dc9d18c.js.map",
+    "static/js/2.c8b6ac05.chunk.js": "/ElephanTalk/static/js/2.c8b6ac05.chunk.js",
+    "static/js/2.c8b6ac05.chunk.js.map": "/ElephanTalk/static/js/2.c8b6ac05.chunk.js.map",
+    "index.html": "/ElephanTalk/index.html",
+    "static/css/main.3e13e2bf.chunk.css.map": "/ElephanTalk/static/css/main.3e13e2bf.chunk.css.map",
+    "static/js/2.c8b6ac05.chunk.js.LICENSE.txt": "/ElephanTalk/static/js/2.c8b6ac05.chunk.js.LICENSE.txt",
+    "static/media/ImageNotFound.eac72ecf.svg": "/ElephanTalk/static/media/ImageNotFound.eac72ecf.svg",
+    "static/media/Logo.5a33dd12.svg": "/ElephanTalk/static/media/Logo.5a33dd12.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9dc9d18c.js",
+    "static/js/2.c8b6ac05.chunk.js",
+    "static/css/main.3e13e2bf.chunk.css",
+    "static/js/main.4d9948b4.chunk.js"
+  ]
+}
