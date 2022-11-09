@@ -14,4 +14,15 @@ https://kevinesc21.github.io/ElephanTalk/
 ## Adaptabilidad en dispositivos
 Full responsive
 
+## Credenciales de acceso
+### Admin
+Usuario: gp34_admin
+
+Contraseña: fRS7tme1GwN14Hrh
+
+### User
+Usuario: gp34_user
+
+Contraseña: c526FgqMYBEgMzT5
+
 </center>
