@@ -9,7 +9,7 @@ Kevin Jefferson Escobar Vasquez **00116120**
 Erika Andrea Paz Quinteros **00117420**
 
 ## Link de GitHub Pages con React
-https://kevinesc21.github.io/ElephanTalk/
+https://rockevinche.github.io/ElephanTalk/
 
 ## Adaptabilidad en dispositivos
 Full responsive
