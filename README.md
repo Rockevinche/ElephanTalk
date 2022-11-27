@@ -1,5 +1,5 @@
 <center>
-    <img src=https://raw.githubusercontent.com/KevinEsc21/Images/main/Proyecto%20web/Logo.png width=300px>
+    <img src=https://raw.githubusercontent.com/Rockevinche/ElephanTalk/54d855cd3212df5545e771c39d4d93538279fd21/src/Assets/Logo.svg width=300px>
 
 ## Integrantes
 Christopher Gerardo Calderon Rendon **00069920**
