@@ -69,7 +69,7 @@ const PostDetails = ({activeUsername, role}) => {
 
     //Funciones para los botones de la publicacion 
 
-    const onEdit = () => navigate(`/edit/${idPost}`);
+    // const onEdit = () => navigate(`/edit/${idPost}`);
 
     const onLike = async () => {
         if (await like(token, idPost)) {
@@ -86,15 +86,15 @@ const PostDetails = ({activeUsername, role}) => {
         }
     };
 
-    const onFavorite = async () => {
-        if (await favorite(token, idPost)) {
-            setFavorites((prev) =>
-                prev.includes(idPost)
-                    ? prev.filter((i) => i !== idPost)
-                    : [...prev, idPost]
-            );
-        }
-    };
+    // const onFavorite = async () => {
+    //     if (await favorite(token, idPost)) {
+    //         setFavorites((prev) =>
+    //             prev.includes(idPost)
+    //                 ? prev.filter((i) => i !== idPost)
+    //                 : [...prev, idPost]
+    //         );
+    //     }
+    // };
 
     //Validaciones para los botones de las publicaciones
     const isActiveUserPost = postView.username === activeUsername && role === "admin" ? true : false;
@@ -122,10 +122,10 @@ const PostDetails = ({activeUsername, role}) => {
                                         <ControlsDetails
                                             verifyUser={isActiveUserPost}
                                             verifyLike={alreadyLiked}
-                                            verifyFavorite={isFavorite}
-                                            onEdit={onEdit}
+                                            // verifyFavorite={isFavorite}
+                                            // onEdit={onEdit}
                                             onLike={onLike}
-                                            onFavorite={onFavorite}
+                                            // onFavorite={onFavorite}
                                         />
                                     )}
                                     {!isError && (

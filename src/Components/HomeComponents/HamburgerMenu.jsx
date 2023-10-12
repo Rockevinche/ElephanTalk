@@ -16,7 +16,7 @@ const HamburgerMenu = ({showHamburguer, onLogOut, role, onFavoritePost, onAllPos
         <div className={HamburguerMenuStyles}>
             <button onClick={onAllPosts} className="font-montserrat text-light-100 font-bold mx-0 sm:mx-2 my-2 border-b-2 border-transparent hover:border-primary-200 hover:text-primary-200 transition-all duration-500 py-1 sm:p-0">Inicio</button>
             {role==="admin" && <button onClick={onAddPost} className="font-montserrat text-light-100 font-bold mx-0 sm:mx-2 my-2 border-b-2 border-transparent hover:border-primary-200 hover:text-primary-200 transition-all duration-500 py-1 sm:p-0">Crear</button>}
-            <button onClick={onFavoritePost} className="font-montserrat text-light-100 font-bold mx-0 sm:mx-2 my-2 border-b-2 border-transparent hover:border-primary-200 hover:text-primary-200 transition-all duration-500 py-1 sm:p-0">Favoritas</button>
+            {/* <button onClick={onFavoritePost} className="font-montserrat text-light-100 font-bold mx-0 sm:mx-2 my-2 border-b-2 border-transparent hover:border-primary-200 hover:text-primary-200 transition-all duration-500 py-1 sm:p-0">Favoritas</button> */}
             {role==="admin" && <button onClick={onOwnedPosts} className="font-montserrat text-light-100 font-bold mx-0 sm:mx-2 my-2 border-b-2 border-transparent hover:border-primary-200 hover:text-primary-200 transition-all duration-500 py-1 sm:p-0">Mis publicaciones</button>}
             <button onClick={onLogOut} className="font-montserrat text-light-100 font-bold mx-0 sm:mx-2 my-2 border-b-2 border-transparent hover:border-primary-200 hover:text-primary-200 transition-all duration-500 py-1 sm:p-0">Cerrar sesión</button>
         </div>

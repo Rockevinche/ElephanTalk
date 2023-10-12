@@ -1,7 +1,6 @@
 {
   "name": "proyecto-web",
   "version": "0.1.0",
-  "homepage": "http://KevinEsc21.github.io/ElephanTalk",
   "dependencies": {
     "@craco/craco": "^6.4.1",
     "@testing-library/jest-dom": "^5.15.0",

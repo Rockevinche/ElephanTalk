@@ -23,18 +23,18 @@ const Post = ({role, post, activeUsername, setPosts, favorites, setFavorites, se
     } = post;
 
     //Obtener los posts favoritos del usuarios para poder identificar cuales ya han sido agregados
-    useEffect(() => {
-        async function getFavorites() {
-            const favorites = await getFavoritesIds(token);
-            setFavorites(favorites);
-        }
+    // useEffect(() => {
+    //     async function getFavorites() {
+    //         const favorites = await getFavoritesIds(token);
+    //         setFavorites(favorites);
+    //     }
 
-        getFavorites();
-    }, []);
+    //     getFavorites();
+    // }, []);
 
     //Funciones para los botones de las publicaciones
 
-    const onEdit = () => navigate(`/edit/${_id}`);
+    // const onEdit = () => navigate(`/edit/${_id}`);
 
     const onHidde = async () => {
         if (await toggleActive(token, _id)) {
@@ -67,12 +67,12 @@ const Post = ({role, post, activeUsername, setPosts, favorites, setFavorites, se
         }
     };
 
-    const onFavorite = async () => {
-        if(await favorite(token, _id)) {
-            setFavorites((prev) => prev.includes(_id) ? prev.filter(i => i !== _id) : [...prev, _id]);
-            setIsAddingFavorite(prev => !prev);
-        }
-    }
+    // const onFavorite = async () => {
+    //     if(await favorite(token, _id)) {
+    //         setFavorites((prev) => prev.includes(_id) ? prev.filter(i => i !== _id) : [...prev, _id]);
+    //         setIsAddingFavorite(prev => !prev);
+    //     }
+    // }
 
     //Validaciones para los botones de las publicaciones
     const isActiveUserPost = ((username === activeUsername) && (role === "admin")) ? true : false;
@@ -95,12 +95,12 @@ const Post = ({role, post, activeUsername, setPosts, favorites, setFavorites, se
                         <ControlsPost
                             verifyuser={isActiveUserPost}
                             verifyLike={alreadyLiked}
-                            verifyFavorite={isFavorite}
-                            onEdit={onEdit}
+                            // verifyFavorite={isFavorite}
+                            // onEdit={onEdit}
                             onHidde={onHidde}
                             active={active}
                             onLike={onLike}
-                            onFavorite={onFavorite}
+                            // onFavorite={onFavorite}
                         />
                         <CommentsPost 
                             id={_id}

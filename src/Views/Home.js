@@ -54,10 +54,10 @@ const Home = ({setToken, username, role}) => {
                 setPageAll(actualPage);
             }
 
-            if (currentPage === "Publicaciones Favoritas") {
-                setPosts(await getFavoritePosts(token));
-                setHasNextPage(false);
-            }
+            // if (currentPage === "Publicaciones Favoritas") {
+            //     setPosts(await getFavoritePosts(token));
+            //     setHasNextPage(false);
+            // }
 
             if (currentPage === "Mis Publicaciones") {
                 let newPosts = [];
@@ -77,14 +77,14 @@ const Home = ({setToken, username, role}) => {
         getPosts();
     }, [isHidden, isAddingFavorite]);
 
-    //Enviar al usuario al incio de la pagina cuando se cambia la vista de publicaciones a mostrar
-    useEffect(() => {
-        async function whenChange() {
-            window.scrollTo(0, 0);
-        }  
+    // //Enviar al usuario al incio de la pagina cuando se cambia la vista de publicaciones a mostrar
+    // useEffect(() => {
+    //     async function whenChange() {
+    //         window.scrollTo(0, 0);
+    //     }  
 
-        whenChange();
-    }, [isChanging]);
+    //     whenChange();
+    // }, [isChanging]);
 
     // Funcion para cargar las nuevas publicaciones del Infinite Scroll
     const fetchNextPage = async () => {
@@ -122,12 +122,12 @@ const Home = ({setToken, username, role}) => {
         setHasNextPage(true);
     };
 
-    const onFavoritePost = async () => {
-        setPosts(await getFavoritePosts(token));
-        setIsChanging(!isChanging);
-        setCurrentPage("Publicaciones Favoritas");
-        setHasNextPage(false);
-    };
+    // const onFavoritePost = async () => {
+    //     setPosts(await getFavoritePosts(token));
+    //     setIsChanging(!isChanging);
+    //     setCurrentPage("Publicaciones Favoritas");
+    //     setHasNextPage(false);
+    // };
 
     const onOwnedPosts = async () => {
         setPageOwned(0);
@@ -149,7 +149,7 @@ const Home = ({setToken, username, role}) => {
                 <HamburgerMenu
                     showHamburguer={showHamburguer}
                     onLogOut={onLogOut}
-                    onFavoritePost={onFavoritePost}
+                    // onFavoritePost={onFavoritePost}
                     onAllPosts={onAllPosts}
                     onOwnedPosts={onOwnedPosts}
                     onAddPost={onAddPost}
