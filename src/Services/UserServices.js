@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3000/api/v1";
+const BASE_URL = "https://puce-stormy-codfish.cyclic.app/api/v1";
 
 const UserServices = {};
 
