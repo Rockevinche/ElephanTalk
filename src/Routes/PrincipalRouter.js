@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react'
-import { HashRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 import UserServices from '../Services/UserServices'
 import AdminRouter from './AdminRouter'
 import UserRouter from './UserRouter'
